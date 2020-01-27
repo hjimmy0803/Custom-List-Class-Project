@@ -105,5 +105,66 @@ namespace CustomUnitTestProject1
             //Assert
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void Remove_RemoveItemFromList_RemoveItemFromIndexThree() 
+        {
+
+            //Arrange 
+            CustomList<int> testList = new CustomList<int>();
+            int expected = 3;
+            int actual;
+
+            testList.Add(1);
+            testList.Add(2);
+            testList.Add(3);
+            testList.Add(4);
+
+            //Act
+            testList.Remove(1);
+            actual = testList[2];
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+            
+        }
+        public void Remove_RemoveItemFromList_CountIncrements() 
+        {
+
+            //Arrange 
+            CustomList<string> testList = new CustomList<string>();
+            int expected = 1;
+            int actual;
+
+            testList.Add("Time");
+            testList.Add("Bold");
+
+            //Act
+            testList.Remove("Bold");
+            actual = testList.Count;
+
+            //Asseert
+            Assert.AreEqual(expected, actual);
+        }
+        public void Remove_RemoveItemsToDecreaseList_CheckToSeeIfCapacityDecreases() 
+        {
+
+            //Arrange
+            CustomList<int> testList = new CustomList<int>();
+            int expected 4;
+            int actual;
+
+            testList.Add(43);
+            testList.Add(50);
+            testList.Add(48);
+            testList.Add(99);
+            testList.Add(12);
+
+            //Act
+            testList.Remove(99);
+            actual = testList.capacity;
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

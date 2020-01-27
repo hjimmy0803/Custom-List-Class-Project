@@ -15,7 +15,19 @@ namespace CustomListClassProject
 
         public int Count 
         {
-                //get and/ or set count
+            //get and/ or set count
+            get 
+            {
+                return count;
+            }
+            
+        }
+        public int Capacity 
+        {
+            get 
+            {
+                return capacity;
+            }
         }
 
         //constructor (SPAWNER)
