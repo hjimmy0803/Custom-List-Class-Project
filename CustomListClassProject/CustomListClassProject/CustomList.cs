@@ -59,10 +59,16 @@ namespace CustomListClassProject
         public void Add(T itemToAdd) 
         {
 
-
-
             items[count] = itemToAdd;
             count++;
+            T[] temp = new T[capacity * 2];
+
+            if (count >= capacity) 
+            {
+
+                items = temp;
+            }
+
 
 
 

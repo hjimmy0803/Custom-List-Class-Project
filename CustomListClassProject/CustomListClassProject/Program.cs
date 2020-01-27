@@ -17,6 +17,7 @@ namespace CustomListClassProject
             jimmyList.Add(8);
             jimmyList.Add(10);
             jimmyList.Add(12);
+            jimmyList.Add
 
 
         }
