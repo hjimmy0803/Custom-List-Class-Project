@@ -20,6 +20,9 @@ namespace CustomListClassProject
             {
                 return count;
             }
+            set {
+                count = value;
+            }
             
         }
         public int Capacity 
@@ -28,6 +31,20 @@ namespace CustomListClassProject
             {
                 return capacity;
             }
+            set 
+            {
+                capacity = value;
+            }
+            
+            
+        }
+
+        //Indexer
+        public T[] this[int i] 
+        {
+
+            get { return items; }
+            set { items = value; }
         }
 
         //constructor (SPAWNER)
@@ -41,7 +58,17 @@ namespace CustomListClassProject
         //member methods (CAN DO)
         public void Add(T itemToAdd) 
         {
-            items[0] = itemToAdd;
+
+
+
+            items[count] = itemToAdd;
+            count++;
+
+
+
+
+
+            //if ([] = 0; items.Count; i++){ }
             // should add a value to our list (to the end)
         }
     }

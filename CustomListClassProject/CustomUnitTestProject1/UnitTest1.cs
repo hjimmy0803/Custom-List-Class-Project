@@ -140,31 +140,31 @@ namespace CustomUnitTestProject1
 
             //Act
             testList.Remove("Bold");
-            actual = testList.Count;
+            actual = testList.count;
 
             //Asseert
             Assert.AreEqual(expected, actual);
         }
-        public void Remove_RemoveItemsToDecreaseList_CheckToSeeIfCapacityDecreases() 
+        public void Remove_RemoveItemThatDoesNotExistInList_CountShouldNotChange()
         {
 
             //Arrange
             CustomList<int> testList = new CustomList<int>();
-            int expected 4;
+            int expected =  4;
             int actual;
 
-            testList.Add(43);
-            testList.Add(50);
-            testList.Add(48);
-            testList.Add(99);
-            testList.Add(12);
+            testList.Add(4);
+            testList.Add(5);
+            testList.Add(6);
+            testList.Add(7);
 
             //Act
-            testList.Remove(99);
-            actual = testList.capacity;
+            testList.Remove(8);
+            actual = testList.count;
 
             //Assert
             Assert.AreEqual(expected, actual);
         }
+        public void Remove_RemoveItem
     }
 }

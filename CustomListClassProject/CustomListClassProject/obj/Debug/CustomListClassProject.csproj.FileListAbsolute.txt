@@ -1,0 +1,6 @@
+C:\Users\Jimmy\OneDrive\Desktop\Custom-List-Class-Project\CustomListClassProject\CustomListClassProject\bin\Debug\CustomListClassProject.exe.config
+C:\Users\Jimmy\OneDrive\Desktop\Custom-List-Class-Project\CustomListClassProject\CustomListClassProject\bin\Debug\CustomListClassProject.exe
+C:\Users\Jimmy\OneDrive\Desktop\Custom-List-Class-Project\CustomListClassProject\CustomListClassProject\bin\Debug\CustomListClassProject.pdb
+C:\Users\Jimmy\OneDrive\Desktop\Custom-List-Class-Project\CustomListClassProject\CustomListClassProject\obj\Debug\CustomListClassProject.csprojAssemblyReference.cache
+C:\Users\Jimmy\OneDrive\Desktop\Custom-List-Class-Project\CustomListClassProject\CustomListClassProject\obj\Debug\CustomListClassProject.exe
+C:\Users\Jimmy\OneDrive\Desktop\Custom-List-Class-Project\CustomListClassProject\CustomListClassProject\obj\Debug\CustomListClassProject.pdb
