@@ -15,9 +15,8 @@ namespace CustomListClassProject
             jimmyList.Add(4);
             jimmyList.Add(6);
             jimmyList.Add(8);
-            jimmyList.Add(10);
-            jimmyList.Add(12);
-            jimmyList.Add
+
+            jimmyList.Remove(6); // { 4, 8 }
 
 
         }

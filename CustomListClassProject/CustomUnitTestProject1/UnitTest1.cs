@@ -107,65 +107,65 @@ namespace CustomUnitTestProject1
             Assert.AreEqual(expected, actual);
         }
         [TestMethod]
-        //public void Remove_RemoveItemFromList_RemoveItemFromIndexThree() 
-        //{
+        public void Remove_RemoveItemFromList_RemoveItemFromIndexThree()
+        {
 
-        //    //Arrange 
-        //    CustomList<int> testList = new CustomList<int>();
-        //    int expected = 3;
-        //    int actual;
+            //Arrange 
+            CustomList<int> testList = new CustomList<int>();
+            int expected = 3;
+            int actual;
 
-        //    testList.Add(1);
-        //    testList.Add(2);
-        //    testList.Add(3);
-        //    testList.Add(4);
+            testList.Add(1);
+            testList.Add(2);
+            testList.Add(3);
+            testList.Add(4);
 
-        //    //Act
-        //    testList.Remove(1);
-        //    actual = testList[2];
+            //Act
+            testList.Remove(1);
+            actual = testList[2];
 
-        //    //Assert
-        //    Assert.AreEqual(expected, actual);
-            
-        //}
-        //public void Remove_RemoveItemFromList_CountIncrements() 
-        //{
+            //Assert
+            Assert.AreEqual(expected, actual);
 
-        //    //Arrange 
-        //    CustomList<string> testList = new CustomList<string>();
-        //    int expected = 1;
-        //    int actual;
+        }
+        public void Remove_RemoveItemFromList_CountIncrements()
+        {
 
-        //    testList.Add("Time");
-        //    testList.Add("Bold");
+            //Arrange 
+            CustomList<string> testList = new CustomList<string>();
+            int expected = 1;
+            int actual;
 
-        //    //Act
-        //    testList.Remove("Bold");
-        //    actual = testList.count;
+            testList.Add("Time");
+            testList.Add("Bold");
 
-        //    //Asseert
-        //    Assert.AreEqual(expected, actual);
-        //}
-    //    public void Remove_RemoveItemThatDoesNotExistInList_CountShouldNotChange()
-    //    {
+            //Act
+            testList.Remove("Bold");
+            actual = testList.count;
 
-    //        //Arrange
-    //        CustomList<int> testList = new CustomList<int>();
-    //        int expected =  4;
-    //        int actual;
+            //Asseert
+            Assert.AreEqual(expected, actual);
+        }
+        public void Remove_RemoveItemThatDoesNotExistInList_CountShouldNotChange()
+        {
 
-    //        testList.Add(4);
-    //        testList.Add(5);
-    //        testList.Add(6);
-    //        testList.Add(7);
+            //Arrange
+            CustomList<int> testList = new CustomList<int>();
+            int expected = 4;
+            int actual;
 
-    //        //Act
-    //        testList.Remove(8);
-    //        actual = testList.count;
+            testList.Add(4);
+            testList.Add(5);
+            testList.Add(6);
+            testList.Add(7);
 
-    //        //Assert
-    //        Assert.AreEqual(expected, actual);
-    //    }
-    //    public void Remove_RemoveItem
+            //Act
+            testList.Remove(8);
+            actual = testList.count;
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+        public void Remove_RemoveItem
     }
 }

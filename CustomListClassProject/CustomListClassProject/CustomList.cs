@@ -40,11 +40,11 @@ namespace CustomListClassProject
         }
 
         //Indexer
-        public T[] this[int i] 
+        public T this[int i] 
         {
 
-            get { return items; }
-            set { items = value; }
+            get { return items[i]; }
+            set { items[i] = value; }
         }
 
         //constructor (SPAWNER)
@@ -74,8 +74,30 @@ namespace CustomListClassProject
                 capacity = capacity * 2;
             }
         }
-        public void Remove(T items)
+        public void Remove(T itemToRemove)
         {
+
+            T[] temp = new T[capacity];
+            bool itemHasBeenRemoved = false;
+
+            for (int i = 0; i < items.Length; i++)
+            {
+                temp[i] = items[i];
+                if (itemToRemove.Equals(items[i])) 
+                {
+
+                    count--;
+                }
+                if (itemHasBeenRemoved == true) 
+                {
+                
+                    temp[i] = items[]
+                }
+             
+            }
+
+            items = temp;
+
 
         }
     }
