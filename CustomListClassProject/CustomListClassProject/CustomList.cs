@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace CustomListClassProject
 {
-    public class CustomList<T>
+    public class CustomList<T> : IEnumerable
     {
         // member variables (Has A)
         T[] items;
@@ -102,8 +103,33 @@ namespace CustomListClassProject
             }
 
             items = temp;
+        }
+        public static CustomList<T> Zip(CustomList<T> left, CustomList<T> right)
+        {
 
+            CustomList<T> items = new CustomList<T>();
+            for (int i = 0; i < left.count; i++)
+            {
+                items.Add(left[i]);
+                items.Add(right[i]);
+            }
+            return items;
 
         }
+
+        public IEnumerator GetEnumerator()
+        {
+            for (int i = 0; i < count; i++) 
+            {
+
+                yield return  items[1];
+
+            }
+            yield return "Finished";
+        }
+
+
+
+        
     }
 }
