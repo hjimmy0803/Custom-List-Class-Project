@@ -88,10 +88,15 @@ namespace CustomListClassProject
 
                     count--;
                 }
-                if (itemHasBeenRemoved == true) 
+                if (itemHasBeenRemoved == true)
                 {
-                
-                    temp[i] = items[]
+
+                    temp[i] = items[i + 1];
+                }
+                else
+                {
+
+                    temp[i] = items[i];
                 }
              
             }
