@@ -10,8 +10,8 @@ namespace CustomListClassProject
     {
         // member variables (Has A)
         T[] items;
-        private int count;
-        private int capacity;
+        public int count;
+        public int capacity;
 
         public int Count 
         {
@@ -61,21 +61,22 @@ namespace CustomListClassProject
 
             items[count] = itemToAdd;
             count++;
-            T[] temp = new T[capacity * 2];
+            
 
             if (count >= capacity) 
             {
-
+                T[] temp = new T[capacity * 2];
+                for (int i = 0; i < items.Length; i++)
+                {
+                    temp[i] = items[i];
+                }
                 items = temp;
+                capacity = capacity * 2;
             }
+        }
+        public void Remove(T items)
+        {
 
-
-
-
-
-
-            //if ([] = 0; items.Count; i++){ }
-            // should add a value to our list (to the end)
         }
     }
 }
