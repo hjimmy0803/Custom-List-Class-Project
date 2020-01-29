@@ -174,7 +174,14 @@ namespace CustomUnitTestProject1
         
         }
         [TestMethod]
-
+        public void TestZip() 
+        {
+            //Arrange
+            CustomList<string> left = new CustomList<string>() {"one","two","three","four" };
+            CustomList<int> right = new CustomList<int>() {1,2,3,4 };
+            
+        
+        }
     }
     
     
