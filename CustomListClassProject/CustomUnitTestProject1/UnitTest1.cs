@@ -27,7 +27,7 @@ namespace CustomUnitTestProject1
         }
 
         [TestMethod]
-        public void Add_AddItemToEmptyList_CountIncrements() 
+        public void Add_AddItemToEmptyList_CountIncrements()
         {
 
             //Arrange
@@ -44,7 +44,7 @@ namespace CustomUnitTestProject1
 
         }
         [TestMethod]
-        public void Add_AddItemToListWithItemsAlreadyInIt_NewItemGoesTOLastIndex() 
+        public void Add_AddItemToListWithItemsAlreadyInIt_NewItemGoesTOLastIndex()
         {
 
             //Arrange
@@ -66,7 +66,7 @@ namespace CustomUnitTestProject1
             Assert.AreEqual(expected, actual);
         }
         [TestMethod]
-        public void Add_AddMultipleItemsToList_CheckItemCount() 
+        public void Add_AddMultipleItemsToList_CheckItemCount()
         {
             //Arrange
             CustomList<int> testList = new CustomList<int>();
@@ -86,7 +86,7 @@ namespace CustomUnitTestProject1
         }
 
         [TestMethod]
-        public void Add_AddItemsToExceedList_CheckToSeeIfCapacityIncreases() 
+        public void Add_AddItemsToExceedList_CheckToSeeIfCapacityIncreases()
         {
 
             //Arrange
@@ -128,6 +128,7 @@ namespace CustomUnitTestProject1
             Assert.AreEqual(expected, actual);
 
         }
+        [TestMethod]
         public void Remove_RemoveItemFromList_CountIncrements()
         {
 
@@ -146,6 +147,7 @@ namespace CustomUnitTestProject1
             //Asseert
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
         public void Remove_RemoveItemThatDoesNotExistInList_CountShouldNotChange()
         {
 
@@ -166,6 +168,14 @@ namespace CustomUnitTestProject1
             //Assert
             Assert.AreEqual(expected, actual);
         }
-        public void Remove_RemoveItem
+        [TestMethod]
+        public void Remove_RemoveFirstIndex_CheckCount()
+        {
+        
+        }
+        [TestMethod]
+
     }
+    
+    
 }

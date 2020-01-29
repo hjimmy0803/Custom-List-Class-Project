@@ -127,9 +127,40 @@ namespace CustomListClassProject
             }
             yield return "Finished";
         }
+        public override string ToString()
+        {
+            return base.ToString();
+        }
+        //Overloading
+        public static CustomList<T> operator +(CustomList<T> customList1, CustomList<T> customList2) 
+        {
 
+            CustomList<T> results = new CustomList<T>();
+            for (int i = 0; i < customList1.count; i++)
+            {
+                results.Add(customList1[i]);
+            }
+            for (int i = 0; i < customList2.count; i++)
+            {
+                results.Add(customList2[i]);
+            }
+            return results;
+        }
+        public static CustomList<T> operator -(CustomList<T> customList1, CustomList<T> customList2) 
+        {
 
-
+            CustomList<T> results = new CustomList<T>();
+            for (int i = 0; i < customList1.count; i++)
+            {
+                results.Remove(customList1[i]);
+            }
+            for (int i = 0; i < customList2.count; i++)
+            {
+                results.Remove(customList2[1]);
+            }
+            return results;
+        }
+        
         
     }
 }
